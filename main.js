@@ -2,7 +2,7 @@ var result = window.confirm("ယခုဘားရှင်းမှာ စမ�
 function toConfirm(){
     if (result == true) {
         window.location.replace("addons/main.html");
-    } 
+    }
     if (result != true) {
         window.location.replace("addons/bye.html");
     }

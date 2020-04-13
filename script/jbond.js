@@ -110,3 +110,19 @@ function toggle(){
     }
 }
 
+var mybutton = document.getElementById("gotop");
+
+window.onscroll = function() {scrollTop()};
+
+function scrollTop() {
+    if (document.body.onscroll > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+function myScroll() {
+    document.body.onscroll = 0;
+    document.documentElement.scrollTop = 0;
+}
