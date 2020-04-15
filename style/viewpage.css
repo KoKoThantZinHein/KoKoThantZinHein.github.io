@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap,Acme&display=swap');
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     font-family: 'Acme', sans-serif;
@@ -22,16 +25,22 @@ body{
 
 nav{
     position: fixed;
-    width: 100%;
+    width: 98%;
     height: 60px;
-    top: 0;
-    z-index: 99;
+    margin-left: 1%;
+    top: 5px;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 99;
 }
 .navfont{
-    font-size: 18px;
+    margin-left: 30px;
+    font-size: 20px;
 }
 .switch{
     position: relative;
@@ -84,7 +93,6 @@ input:checked + .slider::before{
     transform: translateX(26px);
 }
 
-
 .view{
     padding: 20px;
     font-size: 20px;
@@ -127,6 +135,79 @@ section img{
     cursor: pointer;    
 }
 
+/*တရားနာရန်*/
+.container{
+    display: flex;
+}
+.left{
+    flex: 20%;
+    padding: 15px;
+    background-color: rgb(219, 219, 219);
+}
+#search{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid tomato;
+    outline: none;
+}
+.left h2 a{
+    text-decoration: none;
+    color: black;
+}
+.left ul{
+    list-style-type: none;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+.left li a{
+    padding: 12px 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: background-color ease-in-out .3s;
+}
+.left li a:hover{
+    background-color: rgb(194, 194, 194);
+}
+.right{
+    flex: 65%;
+}
+.right .pad{
+    padding: 1%;
+}
+.right .box{
+    width: 23%;
+    background-color: black;
+    height: 200px;
+    border-radius: 10px;
+    float: left;
+    margin-left: 1.5%;
+    margin-top: 10px;
+}
+.right .box:hover{
+    background-color: rgb(194, 194, 194);
+}
+.right .title{
+    width: 20%;
+    background-color: rgb(235, 235, 235);
+    height: 50px;
+    border-radius: 10px;
+    float: left;
+    margin-top: 10px;
+    padding: 15px;
+}
+.right .bar{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    float: left;
+    margin-top: 10px;
+}
 
 @media only screen and (max-width: 600px) {
     section img{
