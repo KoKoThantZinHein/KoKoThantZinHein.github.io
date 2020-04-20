@@ -305,7 +305,7 @@ footer{
 }
 
 .col .qr{
-    width: 100%;
+    width: 200px;
     height: 200px;
 }
 
@@ -446,11 +446,10 @@ footer{
         height: 100px;
         float: left;
         font-family: 'Josefin Sans', sans-serif;
-        background-color: blue;
     }
     
     .col .til{
-        margin-top: 20px;
+        margin-top: 5px;
         font-weight: bold;
         font-size: 18px;
         color: grey;
@@ -460,13 +459,13 @@ footer{
     .col .text{
         top: 0px;
         font-size: 16px;
-        margin-top: 10px;
+        margin-top: 5px;
         color: grey;
         float: left;
     }
     
     .col .qr{
-        width: 100%;
+        width: 200px;
         height: 200px;
         float: left;
     }
